@@ -1,0 +1,107 @@
+body{
+  background-color:#f9cbff;
+  color:#500373;
+  font-family:“Bricolage Grotesque”,sans-serif;
+  font-weight:400;
+  font-style:normal;
+  margin:0;
+  padding:0;
+  text-wrap:balance;
+  
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,blockquote{margin:0;}
+h1, h2, h3 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.handwritten {
+  font-family: "Just Another Hand", cursive;
+}
+
+a:link{color:#500373;text-decoration-thickness:2px;}
+a:visited{color:#8c429e;text-decoration-thickness:2px;}
+a:hover{color:#b7249e;text-underline-offset:4px;text-decoration-thickness:3px;}
+a:active{color:#222222;}
+
+header{
+  background-color:#bdffbf;
+  text-align:center;
+  padding:20px;
+}
+
+nav{
+  background-color:#ffff80;
+  text-align:center;
+  padding:20px;
+  font-size:28px;
+}
+
+nav a{
+  color:#000000;
+  text-decoration:none;
+  padding:4px 8px;
+  border-radius:12px;
+}
+nav a:hover{
+  color:#b7249e;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+main{
+  background-color:#b3f6ff;
+  padding:50px 100px;
+}
+main h2{
+  font-size:54px;
+  margin:10px 0;
+  letter-spacing:0.5px;
+  text-shadow:0 2px 0 #ffd7e7;
+}
+main h3{
+  font-size:30px;
+  margin:30px 0;
+  color:#8c429e;
+}
+main p{
+  margin:20px 0;
+  font-size:18px;
+  color:#333333;
+  hyphens:auto;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  filter:saturate(1.05);
+  border-radius:12px;
+}
+
+.gallery img {
+  width: 100%;       
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;      
+  }
+
+
+footer{
+  background-color:#c6d2ff;
+  padding:24px 12px;
+  text-align:center;
+  margin-top:40px;
+  border-top:2px dashed #ffd7e7;
+}
+footer a{
+  color:#500373;
+  text-decoration-style:wavy;
+}
+
+p{
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-optical-sizing:auto;
+  font-weight:900;
+  font-style:normal;
+  font-variation-settings:"wdth" 100;
+}
