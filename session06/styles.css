@@ -1,0 +1,161 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+body{
+  background-color: #F7F4EA; 
+  color: #4E3523;            
+}
+div.container{
+  background-color: #F7F7F7;;
+  border: 3px solid #A46E2F;
+  border-radius: 16px;
+  width: 80%;
+  
+}
+
+/*grouping css selector*/
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+header{
+  background-color: #F7DF0E;
+  border-bottom: 3px solid #A46E2F;
+}
+nav{
+  background-color: #F9EDB8;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    background-color: #F7DF0E;
+    border: 2px solid #6A4731;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 120px;
+}
+nav a {
+    text-decoration: none;
+    color: #4E3523;
+}
+nav a:hover {
+    color: #6A4731;
+}
+main {
+   width: 70%;
+   background-color: #F7F7F7;
+   padding: 20px;
+   box-sizing: border-box;
+   float: left;
+   padding-right: 12px;
+}
+section {
+    background-color: #f7efea;
+    border: 2px solid #A46E2F;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+aside{
+  float:left;
+  width:30%;
+  background:transparent;       
+  border:none;                
+  color:#4E3523;
+  padding:14px 16px;          
+  margin-top:8px; 
+  }
+
+  aside::first-line{ 
+    font-weight: 700;
+}
+
+footer {
+    background-color:#F7DF0E;
+    float: none;
+    clear: both;
+    color: #4E3523;
+  border-top: 3px solid #A46E2F;
+}
+
+  .sticker-left{
+  float: left;
+  width: 160px;              
+  max-width: 38%;
+  margin: 4px 16px 10px 6px;  
+  padding: 6px;              
+  background: #F7F7F7;
+  border: 2px solid #A46E2F; 
+  border-radius: 14px;
+  box-shadow: 0 3px 0 rgba(106,71,49,0.18); 
+}
+
+.sticker-right{
+  float: right;
+  width: 160px;
+  max-width: 38%;
+  margin: 4px 6px 10px 16px;
+  padding: 6px;
+  background: #F7F7F7;
+  border: 2px solid #A46E2F;
+  border-radius: 14px;
+  box-shadow: 0 3px 0 rgba(106,71,49,0.18);
+}
+
+
+.clear{ clear: both; }
+
+
+div.container {
+  border-radius: 16px;
+  overflow: hidden;   
+}
+
+section {
+  border-radius: 12px;
+  overflow: hidden;   
+}
+
+section p:first-of-type {
+  margin-top: 6px;
+}
+
+
+main, aside{ 
+    position: relative; z-index: 1; 
+}
+.content{
+  position: relative;          
+}
+
+.content:before{
+  content:"";
+  position:absolute;
+  top:0;                       
+  right:0;
+  width:30%;                    
+  height:100%;                  
+  background:#FBF3C4;          
+  border-left:2px solid #A46E2F;
+  z-index:0;                   
+}
+
+
