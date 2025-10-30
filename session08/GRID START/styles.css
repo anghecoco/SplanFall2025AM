@@ -1,0 +1,96 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; 
+  font-family: "Fauna One", serif;
+  color: #222;
+}
+
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* padding on immediate children of wrapper */
+.wrapper {
+  background: #f1f1f1;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px; 
+}
+
+
+header {
+  background: skyblue;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;text-align: center;
+  color: white;
+}
+
+main {
+  background: #ccd8e8;
+  grid-column: 5 / 12; 
+}
+
+nav {
+  background: cadetblue;
+  /* span 3 cols */
+  grid-column: 1 / 5;
+}
+aside {
+  background: #a3c4a4;
+  /* span 3 cols */
+  grid-column: 3/5;
+  grid-row:3/4;
+}
+
+footer {
+  background: #4b5a8a;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  color:white;
+  text-align: center;
+}
+/* span 2 rows */
+main,
+nav {
+  grid-row: 2 / 4;
+}
+
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
