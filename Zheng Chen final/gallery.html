@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Splatoon 3 — Merch &amp; Culture</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="gallery">
+  <div class="page-shell">
+
+    <header class="site-header">
+      <div class="logo-block">
+        <h1 class="site-logo">SPLATOON 3</h1>
+        <p class="site-tagline">Merch &amp; Culture</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="animation.html">Characters</a></li>
+          <li><a class="is-active" href="gallery.html">Merch &amp; Culture</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="card">
+        <header class="card-header">
+          <h2>Merch &amp; Culture</h2>
+          <h3>Where Splatoon shows up in real life</h3>
+        </header>
+
+        <div class="card-body gallery-hero">
+          <div>
+            <p class="kicker">Official</p>
+            <p class="lead">
+              Splatoon has a strong street-style identity, and that visual style carries naturally into merchandise.
+              From store displays to collectibles, it becomes a fun extension of the game's world.
+            </p>
+
+            <div class="button-row">
+              <a class="pill-button" href="https://www.nintendo.com/us/store/products/splatoon-3-switch/" target="_blank" rel="noopener">
+                Official Purchase Link
+              </a>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img src="images/12.jpg" alt="Merch hero image">
+          </figure>
+        </div>
+
+        <section class="gallery-section" aria-label="Merch filters">
+          <h3 class="section-title">Explore </h3>
+
+          <div class="tabs" role="tablist" aria-label="Merch filters">
+            <button class="tab is-active" type="button" data-filter="all">All</button>
+            <button class="tab" type="button" data-filter="stores">Stores</button>
+            <button class="tab" type="button" data-filter="products">Products</button>
+          </div>
+
+          <div class="grid-2">
+            <figure class="sticker js-lightbox" data-group="stores">
+              <img src="images/13.jpg" alt="Nintendo Tokyo Splatoon section">
+              <figcaption>Nintendo Tokyo — Splatoon section</figcaption>
+            </figure>
+
+            <figure class="sticker js-lightbox" data-group="stores">
+              <img src="images/14.jpg" alt="Nintendo New York Splatoon section">
+              <figcaption>Nintendo New York — Splatoon section</figcaption>
+            </figure>
+
+            <figure class="sticker js-lightbox" data-group="products">
+              <img src="images/15.jpg" alt="Splatoon amiibo figures">
+              <figcaption>amiibo — collectible figures</figcaption>
+            </figure>
+
+            <figure class="sticker js-lightbox" data-group="products">
+              <img src="images/16.jpg" alt="Splatoon 3 physical game cover">
+              <figcaption>Physical copy — game cover</figcaption>
+            </figure>
+          </div>
+
+          <p class="lead top-gap">
+            If you want the official product page, use the
+            <a class="buy-link" href="https://www.nintendo.com/us/store/products/splatoon-3-switch/" target="_blank" rel="noopener">Nintendo Store link</a>.
+          </p>
+        </section>
+      </article>
+
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Image preview">
+          <img id="lightbox-img" src="" alt="">
+          <p class="lightbox-cap" id="lightbox-cap"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Full name: Zheng Chen Angel</li>
+        <li>Images: game screenshots and official Nintendo website photos.</li>
+        <li>Official link: Nintendo Store (Splatoon 3).</li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="jquery_script.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
